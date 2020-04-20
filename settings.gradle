@@ -1,0 +1,2 @@
+rootProject.name='ClinetApp'
+include ':app', ':nativetemplates'

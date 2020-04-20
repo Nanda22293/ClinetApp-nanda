@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGblack"
+    android:padding="@dimen/padding_20"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/name">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Y-Movie"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:fontFamily="@font/noto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Version: 2.2"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+            android:fontFamily="@font/noto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/name"
+        android:layout_marginTop="@dimen/padding_10"
+        android:padding="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dev">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:text="Developed By"
+            android:layout_gravity="center"
+            android:background="@color/successColor"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:fontFamily="@font/noto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="NYEIN CHAN KO"
+            android:textSize="17sp"
+            android:textColor="@color/successColor"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/noto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dev"
+        android:layout_marginTop="@dimen/padding_10"
+        android:padding="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/mail">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:text="Developer's Email"
+            android:layout_gravity="center"
+            android:background="@color/red"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:fontFamily="@font/noto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="nyeinchanko.dev.mm@gmail.com"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+
+            android:fontFamily="@font/noto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/mail"
+        android:layout_marginTop="@dimen/padding_10"
+        android:padding="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/learn">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="32dp"
+            android:text="Learning From"
+            android:layout_gravity="center"
+            android:background="@color/successColor"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:fontFamily="@font/noto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="KHIN HTET HTET HSU {IT ONE MM }"
+            android:textSize="16sp"
+            android:textColor="@color/successColor"
+            android:gravity="center"
+
+            android:fontFamily="@font/noto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/learn"
+        android:layout_marginTop="@dimen/padding_10"
+        android:padding="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="32dp"
+            android:text="About App"
+            android:layout_gravity="center"
+            android:background="@color/red"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:fontFamily="@font/noto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="#ChannelMyanmar, #GoldChannel, #FOFMyanmar စတဲ့ website ေတြကေန
+ျမန္မာစာတန္းထိုး ဇာတ္ကားမ်ားကို
+Browser သံုးစရာမလို၊ ေၾကာ္ျငာေတြအမ်ားႀကီးကို
+Click လုပ္စရာမလိုပဲ အလြယ္တစ္ကူ Download ဆဲြႏိုင္ေအာင္ ျပဳလုပ္ေပးထားတဲ့ Android Application ျဖစ္ပါတယ္။
+
+Movie Update ေတြကိုလည္း Website ေတြမွာအသစ္တင္တိုင္း အျမန္ဆံုးျဖစ္ေအာင္ update လည္း ျပဳလုပ္ေပးလ်က္ရွိပါတယ္ ။"
+            android:textColor="@color/color_white"
+
+            android:gravity="center"
+            android:textSize="11sp"
+            android:padding="@dimen/padding_10"
+            android:fontFamily="@font/noto"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

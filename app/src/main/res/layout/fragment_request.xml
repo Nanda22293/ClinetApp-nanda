@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding_20"
+    tools:context=".RequestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adContainer"
+         />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/request"/>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Movie or Series Name"
+            android:padding="10dp"/>
+
+        <EditText
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edtname"
+            android:paddingLeft="10dp"
+            android:hint="Movie or Series Name"
+            android:background="@drawable/ettbt"/>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Movie or Series Image"
+            android:padding="10dp"/>
+
+        <EditText
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edtimage"
+            android:paddingLeft="10dp"
+            android:hint="Movie or Series Image"
+            android:background="@drawable/ettbt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_margin="@dimen/padding_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Request"
+                android:background="@color/infoColor"
+                android:textColor="@color/color_white"
+                android:drawableLeft="@drawable/ic_request"
+                android:drawableTint="@color/color_white"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_margin="@dimen/padding_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:background="@color/errorColor"
+                android:textColor="@color/color_white"
+                android:drawableLeft="@drawable/ic_close"
+                android:drawableTint="@color/color_white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adContainer2"
+            />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/container1">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/padding_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:hint="အစ စာလုံးကုိအႀကီးစာလုံးျဖင့္ရွာေပးပါ..."
+            android:textColorHint="@color/color_white"
+            android:textSize="13sp"
+            android:textColor="@color/color_white"
+            android:paddingLeft="@dimen/padding_10"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/search"
+            android:background="@drawable/ettbt"
+            android:drawableRight="@drawable/ic_search"
+            android:drawableTint="@color/colorOrange"
+            android:paddingRight="@dimen/padding_20"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtmovie"
+            android:layout_below="@id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Movies : "
+            android:textSize="18sp"
+            style="@style/TitleStyle"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/txtmovie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_item_height"
+            android:id="@+id/allmovie"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtseries"
+            android:layout_below="@id/allmovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Series : "
+            android:textSize="18sp"
+            style="@style/TitleStyle"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/txtseries"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_item_height"
+            android:id="@+id/allseires"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container1"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

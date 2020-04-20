@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_item_width">115dp</dimen>
+    <dimen name="image_item_height">170dp</dimen>
+    <dimen name="corner_radius">15dp</dimen>
+    <dimen name="movie_item_margin">2dp</dimen>
+    <dimen name="category_item_height">75dp</dimen>
+    <dimen name="view_count_txtsize">18sp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+</resources>

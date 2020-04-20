@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="titleTextColor">@color/colorOrange</item>
+        <item name="fontFamily">@font/ggfont</item>
+
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/ggfont</item>
+        <item name="android:textColor">@color/colorOrange</item>
+
+    </style>
+
+    <style name="TextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textColorHint">@color/colorOrange</item>
+    </style>
+
+    <style name="TextViewStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

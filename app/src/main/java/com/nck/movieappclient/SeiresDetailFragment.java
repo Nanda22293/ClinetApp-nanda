@@ -45,7 +45,7 @@ public class SeiresDetailFragment extends Fragment {
 
        GoogleAds googleAds = new GoogleAds();
        googleAds.loadAdVerticalAds(myview,getContext(),getActivity());
-       googleAds.loadAdTemplate(myview,getContext(),getActivity());
+      /*googleAds.loadAdTemplate(myview,getContext(),getActivity());*/
        mInterstitialAd = googleAds.loadInterstitialAds(getContext());
        seriesCat = myview.findViewById(R.id.seriesCat);
        viewRating = myview.findViewById(R.id.rating);

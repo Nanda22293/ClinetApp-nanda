@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Y-Movie"
+            android:text="Y-Channel"
             android:textColor="@color/color_white"
             android:textStyle="bold"
             android:gravity="center"
@@ -76,7 +76,7 @@
             android:layout_height="32dp"
             android:text="Developer's Email"
             android:layout_gravity="center"
-            android:background="@color/red"
+            android:background="@color/colorRed"
             android:textColor="@color/color_white"
             android:gravity="center"
             android:fontFamily="@font/noto"/>
@@ -134,7 +134,7 @@
             android:layout_height="32dp"
             android:text="About App"
             android:layout_gravity="center"
-            android:background="@color/red"
+            android:background="@color/colorRed"
             android:textColor="@color/color_white"
             android:gravity="center"
             android:fontFamily="@font/noto"/>

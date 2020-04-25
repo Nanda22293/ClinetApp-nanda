@@ -60,6 +60,7 @@ public class EpisodeAdapter extends RecyclerView.Adapter <EpisodeAdapter.Episode
                         if (context!= null)
                         {
 
+
                             EpisodeModel model = models.get(position);
                             Intent intent = new Intent();
                             intent.setAction(Intent.ACTION_VIEW);

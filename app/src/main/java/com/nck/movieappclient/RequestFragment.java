@@ -58,7 +58,7 @@ View myview;
         rewardedVideoAd = googleAds.loadRewardedVideoAds(getContext());
         googleAds.loadTwoVerticalAds(myview,getContext(),getActivity());
 
-        handler.postDelayed(runnable,20000);
+        handler.postDelayed(runnable,60000);
 
         edtname = myview.findViewById(R.id.edtname);
         edtimage = myview.findViewById(R.id.edtimage);

@@ -52,7 +52,7 @@ private InterstitialAd interstitialAd;
         GoogleAds googleAds = new GoogleAds();
         interstitialAd = googleAds.loadInterstitialAds(getContext());
         mRewardedVideoAd = googleAds.loadRewardedVideoAds(getContext());
-
+        googleAds.loadAdTemplate(myview,getContext(),getActivity());
 
         coverImage = myview.findViewById(R.id.coverImg);
         movieCat = myview.findViewById(R.id.movieCat);

@@ -111,7 +111,7 @@ public class HomeFragment extends Fragment {
         GoogleAds googleAds = new GoogleAds();
         googleAds.loadVerticalAdsForHome(getContext(),myview,getActivity());
         rewardedVideoAd = googleAds.loadRewardedVideoAds(getContext());
-        handler.postDelayed(runnable,50000);
+        /*handler.postDelayed(runnable,0000);*/
 
          FirebaseConnect fConnect = new FirebaseConnect(getContext(),getFragmentManager());
         fConnect.showSlide();

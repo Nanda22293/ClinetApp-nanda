@@ -1,36 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawer"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:openDrawer="left"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/splash_screen"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:background="@color/colorPrimary"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:id="@+id/toolbar"/>
+        <ImageView
+            android:id="@+id/iconimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/channely">
+        </ImageView>
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:layout_centerInParent="true"
+            android:layout_below="@id/iconimage"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+    </RelativeLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
+    <RelativeLayout
+        android:id="@+id/datapanel"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/navContent"/>
-    </LinearLayout>
+            android:id="@+id/drawer"
 
-    <com.google.android.material.navigation.NavigationView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-        android:id="@+id/navView"
-    android:layout_gravity="left"
-        app:headerLayout="@layout/headerlayout"
-        app:menu="@menu/navmenu"
-        app:itemIconTint="@color/colorRed"/>
-</androidx.drawerlayout.widget.DrawerLayout>
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:openDrawer="left"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:id="@+id/toolbar"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/navContent"/>
+            </LinearLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/navView"
+                android:layout_gravity="left"
+                app:headerLayout="@layout/headerlayout"
+                app:menu="@menu/navmenu"
+                app:itemIconTint="@color/colorRed"/>
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+

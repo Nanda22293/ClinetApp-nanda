@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:layout_margin="@dimen/padding_20"
     tools:context=".RequestFragment">
 
@@ -29,6 +30,7 @@
             style="@style/TextViewStyle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/color_white"
             android:text="Movie or Series Name"
             android:padding="10dp"/>
 
@@ -45,6 +47,7 @@
             style="@style/TextViewStyle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/color_white"
             android:text="Movie or Series Image"
             android:padding="10dp"/>
 

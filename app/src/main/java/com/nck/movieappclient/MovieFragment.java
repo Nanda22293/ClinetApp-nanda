@@ -24,7 +24,7 @@ public class MovieFragment extends Fragment {
     static RecyclerCoverFlow list;
 
     View myview;
-    FirebaseConnect fConnect;
+
     public MovieFragment() {
         // Required empty public constructor
     }
@@ -41,7 +41,7 @@ public class MovieFragment extends Fragment {
 
 
         activity = getActivity();
-        fConnect = new FirebaseConnect(getContext(),getFragmentManager());
+        FirebaseConnect fConnect = new FirebaseConnect(getContext(),getFragmentManager());
         fConnect.getAllMoviesByMovieFragment();
         fConnect.getTopTenMovies();
 

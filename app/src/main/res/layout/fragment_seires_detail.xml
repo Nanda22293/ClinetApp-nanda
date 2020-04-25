@@ -12,7 +12,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/adContainer1"
+        android:layout_above="@id/container1"
         android:id="@+id/scroll">
 
         <RelativeLayout
@@ -90,7 +90,7 @@
                 android:id="@+id/count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_toRightOf="@id/cardimage"
                 android:layout_below="@id/flo"
                 >
@@ -154,21 +154,22 @@
 
     <FrameLayout
 
-        android:layout_above="@+id/smalltemplate"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/container1"
         android:layout_marginTop="@dimen/padding_10"
+        android:layout_alignParentBottom="true"
         />
 
-    <com.google.android.ads.nativetemplates.TemplateView
+    <!--<com.google.android.ads.nativetemplates.TemplateView
         android:id="@+id/smalltemplate"
 
         app:gnt_template_type="@layout/gnt_small_template_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        />
+        />-->
 
 
 

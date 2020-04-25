@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -14,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import project.aamir.sheikh.circletextview.CircleTextView;
+
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyItems> {
 
@@ -42,25 +43,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyItem
     @Override
     public void onBindViewHolder(MyItems holder, final int position) {
         holder.mTextView.setText(mArrayList.get(position).categoryName);
-        holder.mCircleTextView.setCustomText(mArrayList.get(position).categoryName);
-        holder.mCircleTextView.setSolidColor(position);
-        holder.mCircleTextView.setTextColor(Color.WHITE);
-        holder.mCircleTextView.setCustomTextSize(18);
-        holder.mCircleTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseConnect fConnect = new FirebaseConnect(context,fm);
-                if (mArrayList.get(position).categoryName.equals(context.getString(R.string.all_str)))
-                {
-                    fConnect.getAllMovies();
-                    fConnect.getAllSeries();
-                }
-                else {
-                    fConnect.getAllMoviesByCategory(mArrayList.get(position).categoryName);
-                    fConnect.getAllSeriesByCategory(mArrayList.get(position).categoryName);
-                }
-            }
-        });
+
         holder.categoryitem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,13 +69,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyItem
 
     public class MyItems extends RecyclerView.ViewHolder {
         TextView mTextView;
-        CircleTextView mCircleTextView;
-        LinearLayout categoryitem;
+
+        RelativeLayout categoryitem;
 
         public MyItems(View itemView) {
             super(itemView);
             mTextView = (TextView) itemView.findViewById(R.id.tv);
-            mCircleTextView = (CircleTextView) itemView.findViewById(R.id.ctv);
+
             categoryitem = itemView.findViewById(R.id.categoryitem);
 
         }

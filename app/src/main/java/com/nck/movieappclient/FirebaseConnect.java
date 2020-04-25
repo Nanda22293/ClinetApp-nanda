@@ -3,6 +3,7 @@ package com.nck.movieappclient;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
+import android.widget.GridView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
@@ -239,16 +240,18 @@ public class FirebaseConnect {
     }
     public void getTopTenMovies()
     {
-        movieRef.orderBy("movieCount", Query.Direction.DESCENDING).limit(10)
+        movieRef.orderBy("movieCount", Query.Direction.DESCENDING).limit(7)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
                         ArrayList<MovieModel> movieModels = new ArrayList<>();
+                        ArrayList<String> movieIds = new ArrayList<>();
                         for (DocumentSnapshot snapshot: queryDocumentSnapshots)
                         {
                             movieModels.add(snapshot.toObject(MovieModel.class));
+                            movieIds.add(snapshot.getId());
                         }
-                        MovieAdapter adapter = new MovieAdapter(movieModels,context,fm);
+                        MovieAdapter adapter = new MovieAdapter(movieModels,context,fm,movieIds);
                         MovieFragment.list.setAdapter(adapter);
                         MovieFragment.list.scrollToPosition(movieModels.size()/2);
                     }

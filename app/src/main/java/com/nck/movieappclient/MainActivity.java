@@ -17,11 +17,16 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.Wave;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawer;
     TextView txtVersion;
 
+    ProgressBar progressBar;
+    RelativeLayout splash_screen , datapanel;
+    Handler mh = new Handler();
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            splash_screen.setVisibility(View.GONE);
+            datapanel.setVisibility(View.VISIBLE);
+            getSupportActionBar().show();;
+        }
+    };
+
 
 Context context;
 
@@ -40,6 +57,8 @@ Context context;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        splashScreen();
 
 
         drawer = findViewById(R.id.drawer);
@@ -102,7 +121,7 @@ Context context;
                     Intent shareIntent = new Intent();
                     shareIntent.setAction(Intent.ACTION_SEND);
                    // shareIntent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id="+BuildConfig.APPLICATION_ID);
-                    shareIntent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en_US");
+                    shareIntent.putExtra(Intent.EXTRA_TEXT,"https://www.mediafire.com/file/z5sudih5zduj08u/YChannel.apk/file");
                     shareIntent.setType("text/plain");
                     startActivity(shareIntent);
                 }
@@ -120,10 +139,17 @@ Context context;
 
                 }
 
+
+
                 drawer.closeDrawer(Gravity.LEFT);
+
                 return false;
             }
         });
+
+        splash_screen = findViewById(R.id.splash_screen);
+        datapanel = findViewById(R.id.datapanel);
+        mh.postDelayed(runnable,5000);
 
         ActionBar actionBar = getSupportActionBar();
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#102027"));
@@ -242,6 +268,13 @@ Context context;
                 super.onBackPressed();
             }
 
+    }
+
+    public void splashScreen()
+    {
+        ProgressBar progressBar = (ProgressBar)findViewById(R.id.spin_kit);
+        Sprite doubleBounce = new Wave();
+        progressBar.setIndeterminateDrawable(doubleBounce);
     }
 
 

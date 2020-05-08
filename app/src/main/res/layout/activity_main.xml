@@ -7,15 +7,17 @@
     <RelativeLayout
         android:id="@+id/splash_screen"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/iconimage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/channely">
-        </ImageView>
+            android:src="@drawable/channely"/>
+
+
         <com.github.ybq.android.spinkit.SpinKitView
             android:layout_centerInParent="true"
             android:layout_below="@id/iconimage"
@@ -24,8 +26,8 @@
             style="@style/SpinKitView.Wave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:SpinKit_Color="@color/colorAccent" />
+
+            app:SpinKit_Color="@color/colorOrange" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -63,11 +65,13 @@
             <com.google.android.material.navigation.NavigationView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
                 android:id="@+id/navView"
                 android:layout_gravity="left"
                 app:headerLayout="@layout/headerlayout"
                 app:menu="@menu/navmenu"
-                app:itemIconTint="@color/colorRed"/>
+                app:itemIconTint="@color/colorOrange"
+                app:itemTextColor="@color/colorOrange"/>
         </androidx.drawerlayout.widget.DrawerLayout>
 
     </RelativeLayout>

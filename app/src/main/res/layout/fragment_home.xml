@@ -46,14 +46,13 @@
 
           <TextView
               android:layout_weight="1"
-              android:id="@+id/txtmovie"
               android:layout_below="@id/allcategory"
+              android:id="@+id/txtmovie"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="All Movies"
               android:textSize="18sp"
               style="@style/TitleStyle"/>
-
 
           <androidx.recyclerview.widget.RecyclerView
               android:layout_below="@id/txtmovie"
@@ -62,15 +61,14 @@
               android:id="@+id/allmovie"/>
 
           <TextView
+              android:layout_below="@id/allmovie"
               android:layout_weight="1"
               android:id="@+id/txtseries"
-              android:layout_below="@id/allmovie"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="All Series"
               android:textSize="18sp"
               style="@style/TitleStyle"/>
-
 
           <androidx.recyclerview.widget.RecyclerView
               android:layout_below="@id/txtseries"

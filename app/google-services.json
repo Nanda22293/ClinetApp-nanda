@@ -45,17 +45,17 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:643084015649:android:33086bfcd1ec33e5ef2b60",
+        "mobilesdk_app_id": "1:643084015649:android:6750d0db49b62fd1ef2b60",
         "android_client_info": {
-          "package_name": "com.nck.clinetapp"
+          "package_name": "com.nck.movieappclient"
         }
       },
       "oauth_client": [
         {
-          "client_id": "643084015649-57ug244ujlha3emhg1p72v3d9d1mk5sv.apps.googleusercontent.com",
+          "client_id": "643084015649-6f5811pd9mjsv82gshu0pc3mcqgo9fc3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.nck.clinetapp",
+            "package_name": "com.nck.movieappclient",
             "certificate_hash": "f50bacd6408c345faae901c3e297b62ea6a5fb4e"
           }
         },
@@ -82,17 +82,17 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:643084015649:android:6750d0db49b62fd1ef2b60",
+        "mobilesdk_app_id": "1:643084015649:android:0c38105c84397953ef2b60",
         "android_client_info": {
-          "package_name": "com.nck.movieappclient"
+          "package_name": "com.nck.ychannelmovie"
         }
       },
       "oauth_client": [
         {
-          "client_id": "643084015649-6f5811pd9mjsv82gshu0pc3mcqgo9fc3.apps.googleusercontent.com",
+          "client_id": "643084015649-0m9s66gkgtm6r4rh5mdc1hl88j36dhep.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.nck.movieappclient",
+            "package_name": "com.nck.ychannelmovie",
             "certificate_hash": "f50bacd6408c345faae901c3e297b62ea6a5fb4e"
           }
         },

@@ -19,6 +19,7 @@
     <string name="see_movie_frag">SeeallMovie</string>
     <string name="see_series_frag">SeeallSeries</string>
     <string name="search_frag">Search</string>
+    <string name="seeallmovie">SeeAllMovie</string>
 
 
     <!--Test Ads
@@ -27,21 +28,22 @@
     <string name="interstitial_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="native_unit_id">ca-app-pub-3940256099942544/2247696110</string>
     <string name="rewarded_unit_id">ca-app-pub-3940256099942544/5224354917</string>
--->
-    //Real Ads zweyatu542016@gmail.com
-    <string name="app_id">ca-app-pub-9634928075316411~2345053317</string>
-    <string name="banner_unit_id">ca-app-pub-9634928075316411/1064126195</string>
-    <string name="interstitial_unit_id">ca-app-pub-9634928075316411/7876946555</string>
-    <string name="native_unit_id">ca-app-pub-9634928075316411/8176329459</string>
-    <string name="rewarded_unit_id">ca-app-pub-9634928075316411/9680982818</string>
+    -->
 
+<!--//nyeinchan.zwe.dev@gmail.com
+    Test Ads
+    <string name="app_id">ca-app-pub-7006552660658118~2301405410</string>
+    <string name="banner_unit_id">ca-app-pub-7006552660658118/5666430194</string>
+    <string name="interstitial_unit_id">ca-app-pub-7006552660658118/4353348528</string>
+    <string name="native_unit_id">ca-app-pub-7006552660658118/3917755325</string>
+    <string name="rewarded_unit_id">ca-app-pub-7006552660658118/9493693247</string>-->
 
-   <!-- //Real Ads Two khantlay9112017@gmail.com
-    <string name="app_id">ca-app-pub-9842998595429565~9875897277</string>
-    <string name="banner_unit_id">ca-app-pub-9842998595429565/3874950341</string>
-    <string name="interstitial_unit_id">ca-app-pub-9842998595429565/8935705333</string>
-    <string name="native_unit_id">ca-app-pub-9842998595429565/6117970301</string>
-    <string name="rewarded_unit_id">ca-app-pub-9842998595429565/6315133625</string>-->
+    //nandanck353@gmail.com
+    <string name="app_id">ca-app-pub-9923861911766892~4729092355</string>
+    <string name="banner_unit_id">ca-app-pub-9923861911766892/2589180027</string>
+    <string name="interstitial_unit_id">ca-app-pub-9923861911766892/4933709121</string>
+    <string name="native_unit_id">ca-app-pub-9923861911766892/4742137430</string>
+    <string name="rewarded_unit_id">ca-app-pub-9923861911766892/9994464115</string>
 
 
 </resources>
